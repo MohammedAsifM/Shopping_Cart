@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping Cart</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="navbar">
+        <div class="logo">
+            <h1>Shopping Cart</h1>
+        </div>
+        <div class="cart-info">
+            <h2>🛒 Cart <span id="cart-count">(0)</span></h2>
+        </div>
+    </header>
+
+    <main>
+        <section class="product-list" id="product-list">
+            <!-- Products will be injected here using JS -->
+        </section>
+
+        <aside class="cart" id="cart">
+            <h2>Your Cart</h2>
+            <div id="cart-items">
+                <!-- Cart items will be injected here -->
+            </div>
+            <h3>Total Price: ₹<span id="total-price">0</span></h3>
+        </aside>
+    </main>
+
+    <script src="products.json"></script>
+    <script src="script.js"></script>
+</body>
+</html>
